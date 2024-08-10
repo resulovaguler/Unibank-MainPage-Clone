@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/font.css" />
+    <link rel="shortcut icon" href="/img/favicon-32x32.png" type="image/x-icon">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Unibank</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="header-top">
+                <div class="top-left">
+                    <a href="" id="ferdi">Fərdi</a>
+                    <a href="">Biznes</a>
+                </div>
+                <div class="top-right">
+                    <select>
+                        <option>AZ</option>
+                        <option>En</option>
+                        <option>Ru</option>
+                    </select>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+            <div class="header-main">
+                <a class="fa-solid fa-bars burger" onclick="BurgerMenu()"></a>
+                <i class="fa-solid fa-x fax" onclick="BurgerMenu()"></i>
+                <div class="logo"></div>
+                <div class="call">
+                    <i class="fa-solid fa-phone"></i> <span id="tel">117</span>
+                </div>
+            </div>
+            <div class="header-desktop">
+                <div class="header-top-desktop">
+                    <div class="logo"></div>
+                    <ul id="menu">
+                        <li><a href="#">Xidmət şəbəkəsi</a></li>
+                        <li><a href="#">Bank haqqında</a></li>
+                        <li><a href="#">Tariflər</a></li>
+                        <li><a href="#">İnsan resursları</a></li>
+                        <li><a href="#">Bankla əlaqə və təkliflər</a></li>
+                        <li><a href="#">F.A.Q</a></li>
+                    </ul>
+                    <div class="desktop-right">
+                        <ul id="addons">
+                            <li><a href="#" class="active">Fərdi</a></li>
+                            <li><a href="#" id="biznes">Biznes</a></li>
+                            <li><a href="#" class="dark"><i class="fa-solid fa-moon"></i></a></li>
+                            <li><a href="#" class="item">ENG</a></li>
+                            <li><a href="#" class="item">RUS</a></li>
+                            <li><a href="#" class="item"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header-main-desktop">
+                    <ul id="main-menu">
+                        <li><a href="">Kartlar</a></li>
+                        <li><a href="">Kreditlər</a></li>
+                        <li><a href="">Əmanətlər</a></li>
+                        <li><a href="">Köçürmələr</a></li>
+                        <li><a href="">Onlayn Xidmətlər</a></li>
+                        <li><a href="">Əlavə Xidmətlər</a></li>
+                    </ul>
+                    <div class="call">
+                        <i class="fa-solid fa-phone"></i> <span id="tel">117</span>
+                    </div>
+                </div>
+            </div>
+            <div class="burger-menu">
+                <ul class="burger-list">
+                    <li><a class="dark-li" href="#">Kartlar</a></li>
+                    <li><a class="dark-li" href="#">Kreditlər</a></li>
+                    <li><a class="dark-li" href="#">Əmanətlər</a></li>
+                    <li><a class="dark-li" href="#">Köçürmələr</a></li>
+                    <li><a class="dark-li" href="#">Onlayn xidmətlər</a></li>
+                    <li><a class="dark-li" href="#">Əlavə xidmətlər</a></li>
+                    <li><a class="light-li" href="#">Xidmət şəbəkəsi</a></li>
+                    <li><a class="light-li" href="#">Bank haqqında</a></li>
+                    <li><a class="light-li" href="#">Tariflər</a></li>
+                    <li><a class="light-li" href="#">İnsan resursları</a></li>
+                    <li><a  class="light-li" href="#">Bankla əlaqə və təkliflər</a></li>
+                    <li><a class="light-li" href="#">F.A.Q</a></li>
+                </ul>
+                <ul class="list-2">
+                    <li><a href="#" class="dark"><i class="fa-solid fa-moon"></i></a></li>
+                    <li><a href="#" class="item"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                    <li><a href="#" class="item">ENG</a></li>
+                    <li><a href="#" class="item">RUS</a></li>
+                </ul>
+                <div class="static-buttons">
+                    <div class="wheel"><img src="img/wheel_right_wh.svg" alt=""></div>
+                    <div class="live"><img src="img/livechat-default-icon.png" alt=""></div>
+                </div>
+            </div>
+        </nav>
+                    <!-- Swiper -->
+            <div class="swiper mySwiper sliderr">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="content">
+                            <h2>Unibankdan "Əjdaha" lotereya</h2>
+                            <p>İstənilən Unibank kartınla ödə və Sea Breeze-də mənzil, Toyota Corolla Cross avtomobili, iPhone 15 Pro və çoxlu pul uduşları qazanmaq şansını əldə et.</p>
+                            <a href="#">Ətraflı</a>
+                        </div>
+                        <div class="slider-img bottom">
+                            <img src="img/dragon.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="content">
+                            <h2>Sənin üçün həm azaltdıq, həm çoxaltdıq! </h2>
+                            <p>Ehtiyacların üçün illik 11%-dən başlayan, 50 000 AZN-dək, 60 aya qədər nağd krediti elə indi əldə et! </p>
+                            <a href="#">Sifariş et</a>
+                        </div>
+                        <div class="slider-img third bottom">
+                            <img src="img/faiz11.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="content">
+                            <h2>AZAL-da 6 aya faizsiz böl!  </h2>
+                            <p>UCard-la AZAL-ın azal.az saytında və ya mobil tətbiqində istədiyin istiqamətə bilet al, ödənişini UBank-da 6 ayadək faizsiz böl və hissə-hissə ödə.  </p>
+                            <a href="#">Ətraflı</a>
+                        </div>
+                        <div class="slider-img bottom third">
+                            <img src="img/ay6.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="content">
+                            <h2>Kredit limitini özün artır!  </h2>
+                            <p>Bunun üçün sadəcə UBank mobil tətbiqində UCard-nı seç və bir neçə toxunuşda istədiyin limiti təyin et! </p>
+                            <a href="#">Ətraflı</a>
+                        </div>
+                        <div class="slider-img third bottom">
+                            <img src="img/limit.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="content">
+                            <h2> Arzuların üçün UBank-da topla! </h2>
+                            <p> UBank mobil tətbiqində istənilən arzun üçün topla və illik 9% dək gəlir qazan!  </p>
+                            <a href="#">Ətraflı</a>
+                        </div>
+                        <div class="slider-img bottom third">
+                            <img src="img/topla.webp" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            
+    </header>
+    <main>
+        <div class="container">
+            <div class="cards">
+                <div class="card">
+                    <h4>Nağd kreditlər</h4>
+                    <h2>11%</h2>
+                    <p>-dən başlayaraq</p>
+                    <a href="">Sifariş et</a>
+                </div>
+                <div class="card">
+                    <h4>Əmanətlər</h4>
+                    <h2>10%</h2>
+                    <p>-dək illik gəlir</p>
+                    <a href="">Ətraflı</a>
+                </div>
+                <div class="card">
+                    <h4>Plastik kartlar</h4>
+                    <h2>0</h2>
+                    <p>-dək keşbek xidməti </p>
+                    <a href="">Ətraflı</a></div>
+                <div class="card">
+                    <h4>Kredit kardı</h4>
+                    <h2>40</h2>
+                    <p>günədək güzəşt müddəti</p>
+                    <a href="">Ətraflı</a>
+                </div>
+            </div>
+            <div class="gif-div">
+                <div class="gif">
+                    <img src="img/ucard.webp" alt="">
+                </div>
+                <div class="gif-content">
+                    <h2>Sənin kartın - UCarddır!</h2>
+                    <p>Bu kart sənə dünyanın istənilən yerində multivalyutalı hesablarla alış-veriş imkanı, 15 000 ₼-dək və 40 günədək faizsiz kredit xətti əldə etmək imkanı verir. Bir sözlə, bütün ehtiyaclar tək kartda!</p>
+                    <a href="#" class="active-a gif-a">Ətraflı</a>
+                    <a href="#" class="gif-a">Partnyorlar</a>
+                    <a href="#" class="gif-a">Şəxsi kabinet</a>
+                </div>
+            </div>
+            <div class="gif-div">
+                <div class="gif-content">
+                    <h2>UBank</h2>
+                    <p>UBank 24/7 bank xidmətlərinə çıxışı smartfonunda təmin edən mobil tətbiqdir. Ödənişlərini banka gəlmədən, telefonunda bir toxunuşla həyata keçir!</p>
+                    <div class="imgs">
+                        <img src="img/playstore.svg" alt="">
+                        <img src="img/appstore.svg" alt="">
+                        <img src="img/app-gallery.svg" alt="">
+                    </div>
+                    <a href="#" class="active-a gif-a about">Haqqında</a>
+                </div>
+                <div class="gif2">
+                    <img src="img/appbar2.png" alt="">
+                </div>
+            </div>
+            <div class="articles">
+                <div class="article">
+                    <h4>Dəyərli müştəri!</h4>
+                    <p>20 iyul 2024-cü il tarixindən etibarən Unibank müştəriləri üçün "Əjdaha" tirajlı stimullaşdırıcı lotereyası keçirilir. </p>
+                    <span>20.07.2024 </span>
+                </div>
+                <div class="article">
+                    <h4>Unibank ikinci rübün maliyyə nəticələrini açıqlayıb</h4>
+                    <p>Unibank bu gün ölkədə real sektorun maliyyə vəsaiti ilə təmin olunmasında daha çox aktivlik nümayiş etdirən banklardandır. 2024-cü ilin 2-ci rübü ərzində də Bank aktiv kreditləşməni davam etdirərək, ölkə iqtisadiyyatına öz töhfəsini artırıb. </p>
+                    <span>12.07.2024 </span>
+                </div>
+                <div class="article">
+                    <h4>Yay planlarınızı Unibankla reallaşdırın!</h4>
+                    <p>Unibank yay istirahətinizi ürəyinizcə keçirmək üçün çox sərfəli kredit təklif edir. 50 000 AZN-dək krediti illik cəmi 11 %-dən başlayan faizlə əldə edib, istirahət arzunuzu reallaşdıra bilərsiniz. </p>
+                    <span>05.07.2024 </span>
+                </div>
+            </div>
+            <div class="news">
+                <div class="buttons">
+                    <a href="#" class="button-news">Bütün xəbərlər</a>
+                    <a href="#" class="button-news">Bütün tender və kotirovkalar</a>
+                </div>
+                <div class="news-div">
+                    <div class="news-card n-c1">
+                        <div class="news-content">
+                            <h2>UTM və filial şəbəkəsi</h2>
+                            <p>Filial və UTM-lərin ünvanları, həmçinin - iş saatları və digər məlumatlar haqqında ətraflı.</p>
+                            <a href="#" class="news-btn">Daha ətraflı</a>
+                        </div>
+                        <div class="news-img">
+                            <img src="img/Bitmap.png" alt="">
+                        </div>
+                    </div>
+                    <div class="news-card n-c2">
+                        <div class="news-content n-ct2">
+                            <h2>UTM və filial şəbəkəsi</h2>
+                            <p>Filial və UTM-lərin ünvanları, həmçinin - iş saatları və digər məlumatlar haqqında ətraflı.</p>
+                            <a href="#" class="news-btn">Daha ətraflı</a>
+                        </div>
+                        <div class="news-img n-i2"><img src="img/callcenter.svg" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <ul class="footer-menu">
+                <h3>Kartlar</h3>
+                <li><a href="#">Kartlar</a></li>
+                <li><a href="#">Debet kartlar</a></li>
+                <li><a href="#">Digər kartlar</a></li>
+            </ul>
+            <ul class="footer-menu">
+                <h3>Kreditlər</h3>
+                <li><a href="#">Nağd</a></li>
+                <li><a href="#">Mikro</a></li>
+                <li><a href="#">İpoteka</a></li>
+                <li><a href="#">Kredit xətti</a></li>
+            </ul>
+            <ul class="footer-menu">
+                <h3>Əmanətlər</h3>
+                <li><a href="#">Müddətli</a></li>
+                <li><a href="#">Proqressiv</a></li>
+                <li><a href="#">Yığım</a></li>
+                <li><a href="#">Topla</a></li>
+            </ul>
+            <ul class="footer-menu">
+                <h3>Köçürmələr</h3>
+                <li><a href="#">Ölkəxarici Pul Köçürmələri</a></li>
+                <li><a href="#">Ölkədaxili Pul Köçürmələri</a></li>
+            </ul>
+            <ul class="footer-menu">
+                <h3>Onlayn xidmətlər</h3>
+                <li><a href="#">UBank</a></li>
+                <li><a href="#">Şəxsi kabinet</a></li>
+                <li><a href="#">Unimiles şəxsi kabinet</a></li>
+                <li><a href="#">Onlayn kredit ödənişi</a></li>
+                <li><a href="#">Onlayn kredit müraciəti</a></li>
+            </ul>
+            <ul class="footer-menu">
+                <h3>Əlavə xidmətlər</h3>
+                <li><a href="#">Hesablaşma-kassa xidməti</a></li>
+                <li><a href="#">Depozit qutuları</a></li>
+                <li><a href="#">Onlayn ticarət (e-commerce)</a></li>
+            </ul>
+            <ul class="footer-menu">
+                <h3>Bank haqqında</h3>
+                <li><a href="#">Rəhbərlik</a></li>
+                <li><a href="#">Müxbir hesablar</a></li>
+                <li><a href="#">Təklif və Şikayətlər</a></li>
+                <li><a href="#">İnsan resursları</a></li>
+                <li><a href="#">Hesabatlar</a></li>
+                <li><a href="#">Digər sənədlər</a></li>
+            </ul>
+        </div>
+            <div class="footer-bar">
+                <div class="icons">
+                    <a href="#"><i class="fa-brands active-icon fa-apple"></i></a>
+                    <a href="#"><i class="fa-brands active-icon fa-android"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-telegram"></i></a>
+                </div>
+                <a href="#" id="privacy">Məxfilik siyasəti</a>
+            </div>
+        <div class="footer-bottom">
+            <div class="company-img">
+                <img src="img/adif.png" alt="">
+                <img src="img/Elektron-hokumet-1.jpg" alt="">
+                <img src="img/infobank.png" alt="">
+                <img src="img/msp.png" alt="">
+            </div>
+            <div class="footer-content">
+                <p id="copyright">© 2024, Unibank - Sənin Bankın</p>
+                <p>Unibank Azərbaycan Respublikası Mərkəzi Bankının 73 saylı 14 dekabr 2010-cu il tarixli lisenziyası əsasında fəaliyyət göstərir.
+                    Bütün hüquqlar qorunur.</p>
+            </div>
+        </div>
+        <div class="static-buttons">
+            <div class="wheel"><img src="img/wheel_right_wh.svg" alt=""></div>
+            <div class="live"><img src="img/livechat-default-icon.png" alt=""></div>
+        </div>
+    </footer>
+
+
+
+    <script src="js/script.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    })
+    </script>
+</body>
+</html>
